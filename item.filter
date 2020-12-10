@@ -72,9 +72,10 @@ ItemDisplay[gpb]: %NAME% %ORANGE%[%BLUE%O%ORANGE%]
 ItemDisplay[gpy]: %NAME% %ORANGE%[%YELLOW%O%ORANGE%]
 ItemDisplay[skz]: %NAME% %ORANGE%[%GRAY%O%ORANGE%]
 
+//MODIFICATION - Show all gems always
 //hiding low ones
-ItemDisplay[GEM<3 DIFF>0]:
-ItemDisplay[GEM<4 DIFF>1]:
+//ItemDisplay[GEM<3 DIFF>0]:
+//ItemDisplay[GEM<4 DIFF>1]:
 //amethysts
 ItemDisplay[GEMTYPE=1 GEM<4]: %NAME% %ORANGE%[%PURPLE%*%ORANGE%]
 ItemDisplay[GEMTYPE=1 GEM>3]: %NAME% %ORANGE%[%PURPLE%O%ORANGE%]%CONTINUE%
