@@ -17,6 +17,40 @@ ItemDisplay[ETH RARE]: %GRAY%[%WHITE%eth%GRAY%] %YELLOW%%NAME%%CONTINUE%
 ItemDisplay[ETH MAG]: %GRAY%[%WHITE%eth%GRAY%] %BLUE%%NAME%%CONTINUE%
 ItemDisplay[ETH NMAG]: %GRAY%[%WHITE%eth%GRAY%] %GRAY%%NAME%%CONTINUE%
 
+
+
+//Modification: Show that item is elite
+ItemDisplay[ELT CRAFT]: %PURPLE%Elt %ORANGE%%NAME%%CONTINUE%
+ItemDisplay[ELT UNI]: %PURPLE%Elt %GOLD%%NAME%%CONTINUE%
+ItemDisplay[ELT SET]: %PURPLE%Elt %GREEN%%NAME%%CONTINUE%
+ItemDisplay[ELT RARE]: %PURPLE%Elt %YELLOW%%NAME%%CONTINUE%
+ItemDisplay[ELT MAG]: %PURPLE%Elt %BLUE%%NAME%%CONTINUE%
+ItemDisplay[ELT NMAG (ETH OR SOCK>0)]: %PURPLE%Elt %GRAY%%NAME%%CONTINUE%
+ItemDisplay[ELT NMAG (!ETH AND SOCK=0)]: %PURPLE%Elt %WHITE%%NAME%%CONTINUE%
+
+//Modification Show that item is exceptional
+ItemDisplay[EXC CRAFT]: %RED%Exc %ORANGE%%NAME%%CONTINUE%
+ItemDisplay[EXC UNI]: %RED%Exc %GOLD%%NAME%%CONTINUE%
+ItemDisplay[EXC SET]: %RED%Exc %GREEN%%NAME%%CONTINUE%
+ItemDisplay[EXC RARE]: %RED%Exc %YELLOW%%NAME%%CONTINUE%
+ItemDisplay[EXC MAG]: %RED%Exc %BLUE%%NAME%%CONTINUE%
+ItemDisplay[EXC NMAG (ETH OR SOCK>0)]: %RED%Exc %GRAY%%NAME%%CONTINUE%
+ItemDisplay[EXC NMAG (!ETH AND SOCK=0)]: %RED%Exc %WHITE%%NAME%%CONTINUE%
+
+//Modification Show that item is normal
+ItemDisplay[NORM CRAFT]: %GRAY%Norm %ORANGE%%NAME%%CONTINUE%
+ItemDisplay[NORM UNI]: %GRAY%Norm %GOLD%%NAME%%CONTINUE%
+ItemDisplay[NORM SET]: %GRAY%Norm %GREEN%%NAME%%CONTINUE%
+ItemDisplay[NORM RARE]: %GRAY%Norm %YELLOW%%NAME%%CONTINUE%
+ItemDisplay[NORM MAG]: %GRAY%Norm %BLUE%%NAME%%CONTINUE%
+ItemDisplay[NORM NMAG (ETH OR SOCK>0)]: %WHITE%Norm %GRAY%%NAME%%CONTINUE%
+ItemDisplay[NORM NMAG (!ETH AND SOCK=0)]: %GRAY%Norm %WHITE%%NAME%%CONTINUE%
+
+//Modification Item level magic and rare items
+ItemDisplay[(MAG OR RARE) ILVL<88]: %NAME% %WHITE%[%GRAY%%ILVL%%WHITE%]%CONTINUE%
+ItemDisplay[(MAG OR RARE) ILVL>87]: %NAME% %WHITE%[%TAN%%ILVL%%WHITE%]%CONTINUE%
+
+
 //Show me NMAG SOCK=0 items with white color
 ItemDisplay[(ARMOR OR WEAPON) NMAG SOCK=0]: %WHITE%%NAME%%CONTINUE%
 
@@ -854,30 +888,3 @@ ItemDisplay[(ARMOR OR WEAPON) !leg CLVL>30]:
 
 //It’s just different sizes. BORDER > MAP > DOT > PX.
 
-
-//Modification: Show that item is elite
-ItemDisplay[ELT CRAFT]: %PURPLE%Elt %ORANGE%%NAME%%CONTINUE%
-ItemDisplay[ELT UNI]: %PURPLE%Elt %GOLD%%NAME%%CONTINUE%
-ItemDisplay[ELT SET]: %PURPLE%Elt %GREEN%%NAME%%CONTINUE%
-ItemDisplay[ELT RARE]: %PURPLE%Elt %YELLOW%%NAME%%CONTINUE%
-ItemDisplay[ELT MAG]: %PURPLE%Elt %BLUE%%NAME%%CONTINUE%
-ItemDisplay[ELT NMAG (ETH OR SOCK>0)]: %PURPLE%Elt %GRAY%%NAME%%CONTINUE%
-ItemDisplay[ELT NMAG (!ETH AND SOCK=0)]: %PURPLE%Elt %WHITE%%NAME%%CONTINUE%
-
-//Modification Show that item is exceptional
-ItemDisplay[EXC CRAFT]: %RED%Exc %ORANGE%%NAME%%CONTINUE%
-ItemDisplay[EXC UNI]: %RED%Exc %GOLD%%NAME%%CONTINUE%
-ItemDisplay[EXC SET]: %RED%Exc %GREEN%%NAME%%CONTINUE%
-ItemDisplay[EXC RARE]: %RED%Exc %YELLOW%%NAME%%CONTINUE%
-ItemDisplay[EXC MAG]: %RED%Exc %BLUE%%NAME%%CONTINUE%
-ItemDisplay[EXC NMAG (ETH OR SOCK>0)]: %RED%Exc %GRAY%%NAME%%CONTINUE%
-ItemDisplay[EXC NMAG (!ETH AND SOCK=0)]: %RED%Exc %WHITE%%NAME%%CONTINUE%
-
-//Modification Show that item is normal
-ItemDisplay[NORM CRAFT]: %GRAY%Norm %ORANGE%%NAME%%CONTINUE%
-ItemDisplay[NORM UNI]: %GRAY%Norm %GOLD%%NAME%%CONTINUE%
-ItemDisplay[NORM SET]: %GRAY%Norm %GREEN%%NAME%%CONTINUE%
-ItemDisplay[NORM RARE]: %GRAY%Norm %YELLOW%%NAME%%CONTINUE%
-ItemDisplay[NORM MAG]: %GRAY%Norm %BLUE%%NAME%%CONTINUE%
-ItemDisplay[NORM NMAG (ETH OR SOCK>0)]: %WHITE%Norm %GRAY%%NAME%%CONTINUE%
-ItemDisplay[NORM NMAG (!ETH AND SOCK=0)]: %GRAY%Norm %WHITE%%NAME%%CONTINUE%
