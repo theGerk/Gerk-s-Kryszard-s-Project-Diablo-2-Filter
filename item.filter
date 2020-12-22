@@ -11,11 +11,12 @@ ItemDisplay[GOLD<100 CLVL<18]:
 ItemDisplay[GOLD<1000 (CLVL>17 AND CLVL<80)]:
 ItemDisplay[GOLD<5000 CLVL>79]:
 
+//MODIFICATION: Show eth in gray
 //Show me that item is etheral
-ItemDisplay[ETH UNI]: %GRAY%[%WHITE%eth%GRAY%] %GOLD%%NAME%%CONTINUE%
-ItemDisplay[ETH RARE]: %GRAY%[%WHITE%eth%GRAY%] %YELLOW%%NAME%%CONTINUE%
-ItemDisplay[ETH MAG]: %GRAY%[%WHITE%eth%GRAY%] %BLUE%%NAME%%CONTINUE%
-ItemDisplay[ETH NMAG]: %GRAY%[%WHITE%eth%GRAY%] %GRAY%%NAME%%CONTINUE%
+ItemDisplay[ETH UNI]: %GRAY%[eth] %GOLD%%NAME%%CONTINUE%
+ItemDisplay[ETH RARE]: %GRAY%[eth] %YELLOW%%NAME%%CONTINUE%
+ItemDisplay[ETH MAG]: %GRAY%[eth] %BLUE%%NAME%%CONTINUE%
+ItemDisplay[ETH NMAG]: %GRAY%[eth] %GRAY%%NAME%%CONTINUE%
 
 
 
@@ -43,12 +44,13 @@ ItemDisplay[NORM UNI]: %GRAY%Norm %GOLD%%NAME%%CONTINUE%
 ItemDisplay[NORM SET]: %GRAY%Norm %GREEN%%NAME%%CONTINUE%
 ItemDisplay[NORM RARE]: %GRAY%Norm %YELLOW%%NAME%%CONTINUE%
 ItemDisplay[NORM MAG]: %GRAY%Norm %BLUE%%NAME%%CONTINUE%
-ItemDisplay[NORM NMAG (ETH OR SOCK>0)]: %WHITE%Norm %GRAY%%NAME%%CONTINUE%
-ItemDisplay[NORM NMAG (!ETH AND SOCK=0)]: %GRAY%Norm %WHITE%%NAME%%CONTINUE%
+ItemDisplay[NORM NMAG (ETH)]: Norm %NAME%%CONTINUE%
+ItemDisplay[NORM NMAG (!ETH SOCK>0)]: %WHITE%Norm %GRAY%%NAME%%CONTINUE%
+ItemDisplay[NORM NMAG (!ETH SOCK=0)]: %GRAY%Norm %WHITE%%NAME%%CONTINUE%
 
 //Modification Item level magic and rare items
-ItemDisplay[(MAG OR RARE) ILVL<88]: %NAME% %WHITE%[%GRAY%%ILVL%%WHITE%]%CONTINUE%
-ItemDisplay[(MAG OR RARE) ILVL>87]: %NAME% %WHITE%[%TAN%%ILVL%%WHITE%]%CONTINUE%
+ItemDisplay[(MAG OR RARE) ILVL<86]: %NAME% %WHITE%[%GRAY%%ILVL%%WHITE%]%CONTINUE%
+ItemDisplay[(MAG OR RARE) ILVL>85]: %NAME% %WHITE%[%TAN%%ILVL%%WHITE%]%CONTINUE%
 
 
 //Show me NMAG SOCK=0 items with white color
