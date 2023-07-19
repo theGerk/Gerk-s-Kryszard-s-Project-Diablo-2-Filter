@@ -615,15 +615,6 @@ ItemDisplay[(hp4 OR mp4) FILTLVL>0 (DIFF>1 OR FILTLVL>4)]: {%NAME%}
 ItemDisplay[(hp5 OR mp5) DIFF>1 FILTLVL>4]: {%NAME%}
 
 //Utilites
-<<<<<<< HEAD
-ItemDisplay[tsc]: %BLUE%* %GRAY%TP
-ItemDisplay[isc]: %RED%* %GRAY%ID
-ItemDisplay[vps CLVL<31]: %GREEN%!%WHITE%stamina
-ItemDisplay[wms CLVL<31]: %GREEN%!%WHITE%thaw
-ItemDisplay[(vps OR wms) CLVL>30]:
-ItemDisplay[yps]: %GREEN%!%WHITE%ant
-ItemDisplay[key]: %GRAY%key%CONTINUE%
-=======
 ItemDisplay[tsc]: %BLUE%* %GRAY%tp %WHITE%scroll{%RED%Warning%WHITE%: You gonna lose socketed Runes/Gems%NL%Socketed Item, %BLUE%* %GRAY%tp %WHITE%scroll, %ORANGE%Hel%NL%%TAN%Note%WHITE%: To remove Runes/Gems from Item:}%CONTINUE%
 ItemDisplay[isc]: %RED%* %GRAY%id %WHITE%scroll%CONTINUE%
 ItemDisplay[vps]: %GREEN%!%WHITE%stamina{%GRAY%(time stack)%NL%%WHITE%Gives infinite stamina for 30s%NL%%TAN%Note%WHITE%: Instantly restores stamina}%CONTINUE%
@@ -651,7 +642,6 @@ ItemDisplay[key QTY=17]: %GRAY%key{%WHITE%Previous Page:   %TAN%-1   %WHITE%:Qua
 ItemDisplay[key QTY=18]: %GRAY%key{%WHITE%Previous Page:   %TAN%-1   %WHITE%:Quantity:   %TAN%+1   %WHITE%Next Page%NL%%NL%%GRAY%Wrath: %ORANGE%Pul + Lum + Ber + Mal%NL%%GRAY%Wisdom: %ORANGE%Pul + Ith + Eld%NL%%GRAY%Wind: %ORANGE%Sur + El%NL%%GRAY%White: %ORANGE%Dol + Io%NL%%GRAY%Wealth: %ORANGE%Lem + Ko + Tir%NL%%TAN%Note%WHITE%: RuneWords Recipes:}%CONTINUE%
 ItemDisplay[key QTY=19]: %GRAY%key{%WHITE%Previous Page:   %TAN%-1   %WHITE%:Quantity%NL%%NL%%GRAY%Zephyr: %ORANGE%Ort + Eth%NL%%GRAY%Zenith: %ORANGE%Jah + Zod + Ort + Thul + Ral%NL%%TAN%Note%WHITE%: RuneWords Recipes:}%CONTINUE%
 ItemDisplay[key FILTLVL>0 (ASSASSIN OR FILTLVL>3)]: {%NAME%}
->>>>>>> 74c05b207cc52b967038cb38494ff50ecb0118bc
 
 //Arrows & Bolts
 ItemDisplay[(aqv OR cqv) NMAG (CLVL>6 OR FILTLVL>3)]:
@@ -670,34 +660,9 @@ ItemDisplay[(gpm OR opl OR ops OR gps OR gpl) FILTLVL>0 (CLVL>23 OR FILTLVL>3)]:
 ItemDisplay[GEM>3]: %PX-9B%%NAME%%CONTINUE%
 
 //Gems
-<<<<<<< HEAD
-//fix for flawless and perfects for some reason it need that fix?
-ItemDisplay[gzv]: %NAME% %ORANGE%[%PURPLE%O%ORANGE%]%CONTINUE%
-ItemDisplay[glw]: %NAME% %ORANGE%[%WHITE%O%ORANGE%]%CONTINUE%
-ItemDisplay[glg]: %NAME% %ORANGE%[%GREEN%O%ORANGE%]%CONTINUE%
-ItemDisplay[glr]: %NAME% %ORANGE%[%RED%O%ORANGE%]%CONTINUE%
-ItemDisplay[glb]: %NAME% %ORANGE%[%BLUE%O%ORANGE%]%CONTINUE%
-ItemDisplay[gly]: %NAME% %ORANGE%[%YELLOW%O%ORANGE%]%CONTINUE%
-ItemDisplay[skl]: %NAME% %ORANGE%[%GRAY%O%ORANGE%]%CONTINUE%
-ItemDisplay[gzv OR glw OR glg OR glr OR glb OR gly OR skl]: %NAME%{%TAN%Note%WHITE%: Mix Gems with %GRAY%key %WHITE%to upg}
-ItemDisplay[gpv]: %NAME% %ORANGE%[%PURPLE%O%ORANGE%]
-ItemDisplay[gpw]: %NAME% %ORANGE%[%WHITE%O%ORANGE%]
-ItemDisplay[gpg]: %NAME% %ORANGE%[%GREEN%O%ORANGE%]
-ItemDisplay[gpr]: %NAME% %ORANGE%[%RED%O%ORANGE%]
-ItemDisplay[gpb]: %NAME% %ORANGE%[%BLUE%O%ORANGE%]
-ItemDisplay[gpy]: %NAME% %ORANGE%[%YELLOW%O%ORANGE%]
-ItemDisplay[skz]: %NAME% %ORANGE%[%GRAY%O%ORANGE%]
-
-//MODIFICATION: hide all gems below flawless
-//hiding low ones
-//ItemDisplay[GEM<3 DIFF>0]: 
-//ItemDisplay[GEM<4 DIFF>1]: 
-ItemDisplay[GEM<4]:
-=======
 //hiding low ones
 ItemDisplay[GEM<3 FILTLVL>0 (DIFF>0 OR FILTLVL>3) !(gzv OR gpv OR glw OR gpw OR glg OR gpg OR glr OR gpr OR glb OR gpb OR gly OR gpy OR skl OR skz)]:
 ItemDisplay[GEM<4 FILTLVL>0 (DIFF>1 OR FILTLVL>3) !(gzv OR gpv OR glw OR gpw OR glg OR gpg OR glr OR gpr OR glb OR gpb OR gly OR gpy OR skl OR skz)]:
->>>>>>> 74c05b207cc52b967038cb38494ff50ecb0118bc
 //amethysts
 ItemDisplay[GEMTYPE=1 GEM<4 !(gzv OR gpv)]: %NAME% %ORANGE%[%PURPLE%*%ORANGE%]
 ItemDisplay[GEMTYPE=1 GEM>3]: %NAME% %ORANGE%[%PURPLE%O%ORANGE%]%CONTINUE%
@@ -723,27 +688,14 @@ ItemDisplay[GEMTYPE=7 GEM>3]: %NAME% %ORANGE%[%GRAY%O%ORANGE%]%CONTINUE%
 ItemDisplay[(gzvs OR glys OR glbs OR glgs OR glrs OR glws OR skls) (CLVL>1 FILTLVL<4)]: %DOT-70%%TIER-2%%NAME%%CONTINUE%
 
 //Runes
-<<<<<<< HEAD
 ItemDisplay[(RUNE<15 OR RUNE=16 OR RUNE=17)]: %PX-62%%ORANGE%%RUNENAME% %GRAY%[%TAN%%RUNENUM%%GRAY%]%CONTINUE%
 //ItemDisplay[(RUNE<15 OR RUNE=16 OR RUNE=17) (CLVL=1 OR CLVL>79)]: %ORANGE%%RUNENAME% %GRAY%[%TAN%%RUNENUM%%GRAY%]%CONTINUE%
 ItemDisplay[RUNE=15 OR RUNE=18 OR RUNE=19]: %PX-62%%TAN%*  %ORANGE%%RUNENAME% Rune %GRAY%[%WHITE%%RUNENUM%%GRAY%]%TAN%  *%CONTINUE%
-=======
-ItemDisplay[(RUNE<18) (CLVL>1 AND (CLVL<80 OR FILTLVL<4))]: %PX-62%%TIER-2%%ORANGE%%RUNENAME% %GRAY%[%TAN%%RUNENUM%%GRAY%]%CONTINUE%
-ItemDisplay[(RUNE<18) (CLVL=1 OR (CLVL>79 FILTLVL>3))]: %ORANGE%%RUNENAME% %GRAY%[%TAN%%RUNENUM%%GRAY%]%CONTINUE%
-ItemDisplay[(RUNE=18 OR RUNE=19) FILTLVL<5]: %PX-62%%TIER-3%%TAN%*  %ORANGE%%RUNENAME% Rune %GRAY%[%WHITE%%RUNENUM%%GRAY%]%TAN%  *%CONTINUE%
-ItemDisplay[(RUNE=18 OR RUNE=19) FILTLVL>4]: %TAN%*  %ORANGE%%RUNENAME% Rune %GRAY%[%WHITE%%RUNENUM%%GRAY%]%TAN%  *%CONTINUE%
->>>>>>> 74c05b207cc52b967038cb38494ff50ecb0118bc
 ItemDisplay[RUNE>19 AND RUNE<26]: %DOT-62%%RED%*     %ORANGE%%RUNENAME% Rune %GRAY%[%RED%%RUNENUM%%GRAY%]%RED%     *%CONTINUE%
 ItemDisplay[RUNE>25]: %BORDER-62%%GREEN%*%PURPLE%*%RED%*          %ORANGE%%RUNENAME% Rune %GRAY%[%GREEN%%RUNENUM%%GRAY%]%RED%          *%PURPLE%*%GREEN%*%CONTINUE%
 
 //All Charms
-<<<<<<< HEAD
-ItemDisplay[cm3 ILVL<50 !ID]: 
-ItemDisplay[cm2 MAG !ID]: %TAN%*%BLUE% %NAME% %TAN%*
-ItemDisplay[cm1 OR (cm3 AND ILVL>49) MAG !ID]: %DOT-9B%%PURPLE%*%BLUE%   %NAME%   %PURPLE%*
-=======
 ItemDisplay[(cm1 OR cm2 OR cm3) MAG !ID]: %DOT-9B%%PURPLE%*%BLUE%   %NAME%   %PURPLE%*
->>>>>>> 74c05b207cc52b967038cb38494ff50ecb0118bc
 ItemDisplay[(cm1 OR cm2 OR cm3) UNI !ID]: %PX-68%%NAME%
 
 //Good Charms part.1
@@ -918,12 +870,7 @@ ItemDisplay[cm3 !UNI TABSK50>0]: %PURPLE%Martial Arts%BLUE%%NL%%NAME%
 ItemDisplay[cm3 MAG ID ILVL>90]: %NAME%{%WHITE%Cube with 3xPerf Gem%NL%%TAN%Note%WHITE%: ILVL%ORANGE%91+ %BLUE%Grand Charm%WHITE%, to Reroll:}
 
 //Highlight Good Magic items
-<<<<<<< HEAD
-ItemDisplay[(jew OR rin OR amu) MAG !ID]: %DOT-9A%%TAN%*%WHITE%*   %BLUE%%NAME%%WHITE%   *%TAN%*
-
-=======
 ItemDisplay[jew MAG !ID]: %DOT-9A%%TAN%*%WHITE%*   %NAME%%WHITE%   *%TAN%*%BLUE%
->>>>>>> 74c05b207cc52b967038cb38494ff50ecb0118bc
 
 //Highlight Good Rare items
 ItemDisplay[(jew OR rin OR amu OR CIRC) RARE !ID]: %DOT-A8%%TAN%*%WHITE%*   %NAME%%WHITE%   *%TAN%*%YELLOW%
@@ -2539,11 +2486,7 @@ ItemDisplay[(ARMOR OR WEAPON) INF FILTLVL>0]: {%NAME%}
 ItemDisplay[(ARMOR OR WEAPON) !leg !opm ((CLVL>30 FILTLVL>0) OR FILTLVL>3)]: {%NAME%}
 
 //It’s just different sizes. BORDER > MAP > DOT > PX.
-<<<<<<< HEAD
-
-=======
 //%TIER-X% - just minimap pin w/o chat notify when tier is higher
 //BELOW: Minimap Pin + Notify for TIER1, Just Pin for TIER2, Hide for Tier3+
 //ItemDisplay[(ARMOR OR WEAPON) FILTLVL<3]: %MAP-0A%%PX-62%%TIER-1%%NAME%
 //ItemDisplay[(ARMOR OR WEAPON) FILTLVL>2]: %NAME%
->>>>>>> 74c05b207cc52b967038cb38494ff50ecb0118bc
