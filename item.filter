@@ -28,7 +28,6 @@ ItemDisplay[GOLD<2000 CLVL>79 FILTLVL>1]:
 ItemDisplay[GOLD<3000 CLVL>79 FILTLVL>3]:
 ItemDisplay[GOLD<5000 CLVL>79 FILTLVL>4]:
 
-<<<<<<< HEAD
 
 //Modification: Show that item is elite
 ItemDisplay[ELT CRAFT]: %PURPLE%Elt %ORANGE%%NAME%%CONTINUE%
@@ -75,7 +74,6 @@ ItemDisplay[(MAG OR RARE) ILVL>87]: %NAME% %WHITE%[%TAN%%ILVL%%WHITE%]%CONTINUE%
 //Show me NMAG SOCK=0 items with white color AND NMAG SOCK>0 with gray
 ItemDisplay[(ARMOR OR WEAPON) NMAG SOCK=0]: %WHITE%%NAME%%CONTINUE%
 ItemDisplay[(ARMOR OR WEAPON) NMAG SOCK>0]: %GRAY%%NAME%%CONTINUE%
-=======
 //Names of Superior and Inferior items to short in later step
 ItemDisplay[(SUP OR INF) !RW cap]: Cap%CONTINUE%
 ItemDisplay[(SUP OR INF) !RW xap]: War Hat%CONTINUE%
@@ -591,7 +589,6 @@ ItemDisplay[(WEAPON OR ARMOR) NMAG !ID]: %NAME%
 
 //Show me that item is ethereal
 ItemDisplay[ETH]: %GRAY%[%WHITE%eth%GRAY%] %NAME%%CONTINUE%
->>>>>>> 74c05b207cc52b967038cb38494ff50ecb0118bc
 
 //Show me number of sockets of every socketed item
 ItemDisplay[SOCK>0]: %NAME% %TAN%[%WHITE%%SOCKETS%%TAN%]%CONTINUE%
